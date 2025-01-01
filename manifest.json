@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Chrome History Monitor",
+  "version": "1.0",
+  "description": "Monitors and logs browsing history (not tied to Chrome's built-in history).",
+  "permissions": ["webRequest", "webRequestBlocking", "storage", "tabs"],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
